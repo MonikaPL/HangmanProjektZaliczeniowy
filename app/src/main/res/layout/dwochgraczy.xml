@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:background="@drawable/dark_wallpaper"
+    android:id="@+id/relative"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/text_view_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player1"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:paddingTop="0px"
+        android:gravity="top">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/LinearImage"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/LinearTextViews"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="15dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="WORD"
+            android:maxLength="1" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:scaleType="fitXY"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/drawing_0" />
+
+    </LinearLayout>
+
+
+
+
+    <com.example.monika.wisielec_projektzaliczeniowy.MyKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/LinearTextViews"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        app:autoSizeTextType="uniform"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

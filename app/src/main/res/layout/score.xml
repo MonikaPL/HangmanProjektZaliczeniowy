@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:gravity="center"
+    android:background="@drawable/dark_wallpaper"
+    android:paddingRight="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:shadowColor="#A80D22"
+            android:shadowRadius="5"
+            android:text="SCORE"
+            android:textColor="#FFFFFF"
+            android:textSize="70dp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/ScorePlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:shadowColor="#A80D22"
+            android:shadowRadius="5"
+            android:text="Player1: "
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/ScorePlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:shadowColor="#A80D22"
+            android:shadowRadius="5"
+            android:text="Player2: "
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
